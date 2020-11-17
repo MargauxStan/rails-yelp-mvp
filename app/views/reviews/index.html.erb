@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="my-3">Reviews</h1>
+  <div class="">
+    <% @reviews.each do |review| %>
+      <div class="border p-3 my-3">
+      <p><%= review.content %></p>
+      <p>Rate <%= review.rating %>/5</p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
